@@ -1,0 +1,32 @@
+header {
+    background-color: #000000;
+    padding:20px 0;
+}
+
+.caixa-weon {
+    position: relative;
+    width: 750px;
+    margin: 0 auto;
+}
+
+.navegacao li {
+    text-align: center;
+}
+
+.navegacao a {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-decoration: none;
+
+}
+
+.navegacao a:hover {
+    color: #FF0000;
+}
+
+.principal h1{
+    text-align: center;
+    font-weight: bold;
+}
+

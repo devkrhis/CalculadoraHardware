@@ -9,28 +9,51 @@ header {
     margin: 0 auto;
 }
 
-.navegacao li {
-    text-align: center;
-}
-
-.navegacao a {
-    text-transform: uppercase;
-    font-weight: bold;
-    color: #FFFFFF;
-    text-decoration: none;
-
-}
-
-.navegacao a:hover {
-    color: #FF0000;
-}
-
-.navegacao a:active{
-    color: #00FFFF
-}
-
-.principal h1{
+h1 {
+    margin: 10px auto;
     text-align: center;
     font-weight: bold;
+    font-size: 20px;
+}
+
+
+.formulario {
+    width: 250px;
+    margin: 10px auto;
+    text-align: center;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    padding: 20px 10px 20px;
+    
+}
+
+.formulario label{
+    margin-top: 15px;
+    font-size: 16px;
+    text-align: center;
+    display: block;
+    font-weight: bold;
+}
+
+.enviar {
+    margin-top: 5px;
+    width: 200px;
+    padding: 10px 0;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    background-color: red;
+    cursor: pointer;
+}
+
+.enviar:hover {
+    color: blue;
+    background-color: aqua;
+
+}
+
+.copyright {
+    margin-top: 30px;
+    text-align: center;
 }
 

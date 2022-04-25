@@ -5,6 +5,7 @@
         <title> Calculadora - WeON Omnichannel </title>
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="index.css">
+        <script src="formulaMagica.js" charset="utf-8"> </script>
 
     </head>
     <body>
@@ -15,26 +16,22 @@
         </header>
 
         <main>
+
             <h1>Calculadora de Hardware Interna</h1>
 
-            <div class="formulario-principal">
+            <div class="formulario-principal">   
                 <form class="formulario">
                     <label for="quantidadeagentes"> Quantidade De Agentes</label>
-                    <input type="number" id="quantidadeagentes" class="quantidadeagentes" required placeholder="40">
+                    <input type="number" id="quantidadeagentes" class="quantidadeagentes" required placeholder="40" >
 
                     <label for="quantidadediscador"> Quantidade De Discadores</label>
                     <input type="number" id="quantidadediscador" class="quantidadediscador" required placeholder="3">
 
-                    <label for="testeparaboxone"> teste para box</label>
-                    <input type="number" id="testeparaboxone" class="testeparaboxone" required placeholder="3">
-
-                    <label for="testeparaboxtwo"> teste para box2</label>
-                    <input type="number" id="testeparaboxtwo" class="testeparaboxtwo" required placeholder="3">
-
-                    <input type="submit" value="Enviar Dados" class="enviar">
+                    <input type="button" value="Enviar Dados" class="enviar" onclick="teste()">
 
                 </form>
-            </div>
+                <div id="retorno" class="centralizadamaster"></div>
+            </div>  
         </main>
 
         <footer>

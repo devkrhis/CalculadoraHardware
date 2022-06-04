@@ -6,7 +6,7 @@ header {
 .caixa-weon {
     position: relative;
     width: 750px;
-    margin: 0 auto;
+    margin: 0px auto;
 }
 
 h1 {
@@ -18,12 +18,12 @@ h1 {
 
 
 .formulario {
-    width: 250px;
+    width: 350px;
     margin: 10px auto;
     text-align: center;
     box-sizing: border-box;
     border: 2px solid #000000;
-    padding: 20px 10px 20px;
+    padding: 10px 10px 10px;
     
 }
 
@@ -58,6 +58,5 @@ h1 {
 
 .centralizadamaster {
     text-align: center;
-    font-weight: bold;
 }
 

@@ -5,6 +5,7 @@
         <title> Calculadora - WeON Omnichannel </title>
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="index.css">
+        <script src="https://raw.githack.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"></script>
         <script src="formulaMagica.js" charset="utf-8"> </script>
 
     </head>
@@ -21,11 +22,12 @@
 
             <div class="formulario-principal">   
                 <form class="formulario">
-                    <label for="vmwareLocal" > VMwareLocal </label>
-                    <input type="radio" name="check" id="vmware" class="checkgroup">
+                    <label  for="vmwareLocal"> VMwareLocal </label>
+                    <input  type="radio" name="check" id="vmware" class="checkgroup" >
 
-                    <label for="googleCloud" > Google Cloud </label>
-                    <input type="radio" name ="check" id="google" class="checkgroup">
+                    <label  for="googleCloud"> Google Cloud </label>
+                    <input  type="radio" name="check" id="google" class="checkgroup" >
+
 
                     <label for="quantidadeagentes"> Quantidade De Agentes</label>
                     <input type="number" id="quantidadeagentes" class="quantidadeagentes" required placeholder="40" >
@@ -34,6 +36,8 @@
                     <input type="number" id="quantidadediscador" class="quantidadediscador" required placeholder="3">
 
                     <input type="button" value="Enviar Dados" class="enviar" onclick="teste()">
+
+                    <input type="button" value="BAIXAR PDF" onclick="imprimindoValor()">
 
                 </form>
                 <div id="retorno" class="centralizadamaster"></div>

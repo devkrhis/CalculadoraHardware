@@ -1,4 +1,3 @@
-
 function teste(){
     const quantidadeAgents = document.getElementById("quantidadeagentes").value
     const quantidaDeDiscador = document.getElementById("quantidadediscador").value
@@ -16,7 +15,7 @@ function teste(){
         document.getElementById("retorno").innerHTML ="Será necessário esse Hardware para a maquina DN1! <br> VCPU: 10 <br>MEMORIA: 15 <br> SWAP: 6 <br> ESPACO EM DISCO: 20 <br> <br>Será necessário esse Hardware para a maquina DN2! <br>VCPU: 8 <br>MEMORIA: 10 <br>SWAP: 4 <br>ESPACO EM DISCO: 100 <br><br>Será necessário esse Hardware para a maquina VN1! <br><br>VCPU: 6 <br>MEMORIA: 8 <br>SWAP: 4 <br>ESPACO EM DISCO: 10 <br><br>Será necessário esse Hardware para a maquina VN2! <br><br>VCPU: 6 <br>MEMORIA: 8 <br>SWAP: 4 <br>ESPACO EM DISCO: 10 <br><br>Será necessário esse Hardware para a maquina VN3! <br>VCPU: 6<br> MEMORIA: 8 <br>SWAP: 4 <br>ESPACO EM DISCO: 10 <br><br>Será necessário esse Hardware para a maquina NODEQUEUE! <br>VCPU: 4 <br>MEMORIA: 4 <br>SWAP: 4 <br>ESPACO EM DISCO: 100 <br><br>Será necessário esse Hardware para a maquina GATEWAY! <br>VCPU: 8 <br>MEMORIA: 10 <br>SWAP: 2 <br>ESPACO EM DISCO: 100";
 
     } else if (quantidadeAgents > 95 && quantidadeAgents <= 120 && quantidaDeDiscador <= 6 && vmware == true && google == false) {
-        document.getElementById("retorno").innerHTML ="Será necessário esse Hardware para a maquina DN1! <br> VCPU: 12 <br> MEMORIA: 20 <br>SWAP: 4 <br>ESPACO EM DISCO: 250 <br><br>Será necessário esse Hardware para a maquina DN2! <br> VCPU: 10 <br> MEMORIA: 12 <br> SWAP: 4 <br> ESPACO EM DISCO: 150 <br> Será necessário esse Hardware para a maquina VN1! <br><br> VCPU: 6 <br> MEMORIA: 10 <br> SWAP: 4 <br> ESPACO EM DISCO: 150 <br><br> Será necessário esse Hardware para a maquina VN2!<br> VCPU: 6 <br> MEMORIA: 10 <br> SWAP: 4 <br> ESPACO EM DISCO: 150 <br><br> Será necessário esse Hardware para a maquina VN3! <br>VCPU: 6 <br> MEMORIA: 10 <br> SWAP: 4 <br> ESPACO EM DISCO: 150 <br><br> Será necessário esse Hardware para a maquina VN4! <br> VCPU: 6 <br> MEMORIA: 10 <br>SWAP: 4 <br> ESPACO EM DISCO: 150 <br><br> Será necessário esse Hardware para a maquina NODEQUEUE! <br> VCPU: 6 <br> MEMORIA: 6 <br> SWAP: 4 <br> ESPACO EM DISCO: 100 <br><br>Será necessário esse Hardware para a maquina GATEWAY! <br> VCPU: 8 <br> MEMORIA: 10 <br> SWAP: 4 <br> ESPACO EM DISCO: 100";
+        document.getElementById("retorno").innerHTML ="Será necessário esse Hardware para a maquina DN1! <br> VCPU: 12 <br> MEMORIA: 20 <br>SWAP: 4 <br>ESPACO EM DISCO: 250 <br><br>Será necessário esse Hardware para a maquina DN2! <br> VCPU: 10 <br> MEMORIA: 12 <br> SWAP: 4 <br> ESPACO EM DISCO: 150 <br><br> Será necessário esse Hardware para a maquina VN1! <br> VCPU: 6 <br> MEMORIA: 10 <br> SWAP: 4 <br> ESPACO EM DISCO: 150 <br><br> Será necessário esse Hardware para a maquina VN2!<br> VCPU: 6 <br> MEMORIA: 10 <br> SWAP: 4 <br> ESPACO EM DISCO: 150 <br><br> Será necessário esse Hardware para a maquina VN3! <br>VCPU: 6 <br> MEMORIA: 10 <br> SWAP: 4 <br> ESPACO EM DISCO: 150 <br><br> Será necessário esse Hardware para a maquina VN4! <br> VCPU: 6 <br> MEMORIA: 10 <br>SWAP: 4 <br> ESPACO EM DISCO: 150 <br><br> Será necessário esse Hardware para a maquina NODEQUEUE! <br> VCPU: 6 <br> MEMORIA: 6 <br> SWAP: 4 <br> ESPACO EM DISCO: 100 <br><br>Será necessário esse Hardware para a maquina GATEWAY! <br> VCPU: 8 <br> MEMORIA: 10 <br> SWAP: 4 <br> ESPACO EM DISCO: 100";
 
 
         //AGORA COMEÇA O DO GOOGLE CLOUD
@@ -37,3 +36,11 @@ function teste(){
 
 }
 
+
+function imprimindoValor(){
+    const element = document.getElementById("retorno")
+    html2pdf()
+    .from(element)
+    .save()
+
+}
